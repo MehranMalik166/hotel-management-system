@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven | About Us</title>
+    <meta name="description" content="Learn about Luxury Haven Hotel's history and values">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        accent: '#3b82f6',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-2xl font-bold text-primary">Luxury Haven</span>
+            </a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i data-feather="menu" class="text-gray-800 w-6 h-6"></i>
+            </button>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-primary font-medium hover:text-accent transition">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-accent transition">Services</a>
+                <a href="booking.html" class="text-gray-700 hover:text-accent transition">Booking</a>
+                <a href="contact.html" class="text-gray-700 hover:text-accent transition">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 text-primary font-medium">About</a>
+            <a href="services.html" class="block py-2 text-gray-700 hover:text-accent transition">Services</a>
+            <a href="booking.html" class="block py-2 text-gray-700 hover:text-accent transition">Booking</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-accent transition">Contact</a>
+        </div>
+    </header>
+
+ <!-- Hero Section with External Image Link -->
+
+<section class="relative py-24 min-h-[400px]">
+  <!-- Blurred Background with external image -->
+  <div class="absolute inset-0 -z-10">
+    <img 
+      src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" 
+      alt="About Luxury Haven"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0 bg-black/20"></div>
+  </div>
+  
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center">
+    <div class="text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">About Luxury Haven</h1>
+      <p class="text-gray-200 text-xl max-w-2xl mx-auto drop-shadow-md">
+        Our story, values, and commitment to excellence
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Content Section with External Lobby Image -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <!-- Lobby Image with external link -->
+      <div class="lg:w-1/2" data-aos="fade-right">
+        <img 
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Hotel Lobby" 
+          class="rounded-xl shadow-lg w-full"
+        >
+      </div>
+      
+      <div class="lg:w-1/2" data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+        <p class="text-gray-600 mb-4">
+          Founded in 2005, Luxury Haven began as a small boutique hotel with just 20 rooms. Today, we've grown into an internationally recognized hospitality brand while maintaining our commitment to personalized service.
+        </p>
+        <p class="text-gray-600">
+          Our elegant lobby welcomes guests with its contemporary design blended with classic architectural elements, creating a warm and inviting atmosphere from the moment you arrive.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Mission & Vision Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Mission & Vision</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Guiding principles that shape everything we do</p>
+            </div>
+            
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Mission -->
+    <div class="relative bg-white p-8 rounded-xl shadow-lg group overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <!-- Single Border on Hover -->
+        <div class="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-primary transition-all duration-300 pointer-events-none"></div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="target" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">Our Mission</h3>
+        <p class="text-gray-600">To provide exceptional hospitality experiences by anticipating and exceeding our guests' expectations through personalized service, luxurious accommodations, and attention to detail that creates lasting memories.</p>
+    </div>
+    
+    <!-- Vision -->
+    <div class="relative bg-white p-8 rounded-xl shadow-lg group overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <!-- Single Border on Hover -->
+        <div class="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-primary transition-all duration-300 pointer-events-none"></div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="eye" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">Our Vision</h3>
+        <p class="text-gray-600">To be recognized globally as the standard for luxury hospitality, where innovation meets tradition, and where every guest feels valued, respected, and inspired by their experience with us.</p>
+    </div>
+</div>
+        
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The foundation of our exceptional service</p>
+            </div>
+            
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Value 1 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="users" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Guest-Centric</h3>
+        <p class="text-gray-600">Our guests are at the heart of everything we do. We listen, anticipate needs, and go above and beyond to create memorable experiences.</p>
+    </div>
+    
+    <!-- Value 2 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="star" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Excellence</h3>
+        <p class="text-gray-600">We pursue excellence in every detail, from the quality of our amenities to the professionalism of our staff.</p>
+    </div>
+    
+    <!-- Value 3 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="heart" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Integrity</h3>
+        <p class="text-gray-600">We conduct our business with honesty, transparency, and respect for all stakeholders - guests, employees, and partners alike.</p>
+    </div>
+    
+    <!-- Value 4 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="refresh-cw" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Innovation</h3>
+        <p class="text-gray-600">We embrace change and continuously seek innovative ways to enhance our guests' experience and improve our operations.</p>
+    </div>
+    
+    <!-- Value 5 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="globe" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Sustainability</h3>
+        <p class="text-gray-600">We're committed to environmentally responsible practices that preserve our planet while delivering luxury experiences.</p>
+    </div>
+    
+    <!-- Value 6 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 group overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+        <!-- Single Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="trending-up" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Continuous Growth</h3>
+        <p class="text-gray-600">We invest in our team's development and embrace learning opportunities to consistently raise our standards.</p>
+    </div>
+</div>
+        
+        
+        
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Our Leadership Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The dedicated professionals who make Luxury Haven exceptional</p>
+            </div> 
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Team Member 1 -->
+    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-primary bg-opacity-10 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </div>
+        <h3 class="text-xl font-semibold mb-1 text-gray-800">James Wilson</h3>
+        <p class="text-primary mb-3">Founder & CEO</p>
+        <p class="text-gray-600 text-sm">With over 30 years in hospitality, James founded Luxury Haven with a vision to redefine luxury accommodations.</p>
+    </div>
+    
+    <!-- Team Member 2 -->
+    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-primary bg-opacity-10 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </div>
+        <h3 class="text-xl font-semibold mb-1 text-gray-800">Sarah Johnson</h3>
+        <p class="text-primary mb-3">General Manager</p>
+        <p class="text-gray-600 text-sm">Sarah brings 15 years of luxury hotel management experience from properties around the world.</p>
+    </div>
+    
+    <!-- Team Member 3 -->
+    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-primary bg-opacity-10 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Chen" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </div>
+        <h3 class="text-xl font-semibold mb-1 text-gray-800">Michael Chen</h3>
+        <p class="text-primary mb-3">Director of Operations</p>
+        <p class="text-gray-600 text-sm">Michael ensures seamless operations across all departments with his meticulous attention to detail.</p>
+    </div>
+    
+    <!-- Team Member 4 -->
+    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-primary bg-opacity-10 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+        </div>
+        <h3 class="text-xl font-semibold mb-1 text-gray-800">Emily Rodriguez</h3>
+        <p class="text-primary mb-3">Director of Guest Experience</p>
+        <p class="text-gray-600 text-sm">Emily and her team create the personalized touches that make each guest's stay unforgettable.</p>
+    </div>
+</div>
+           
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Experience the Luxury Haven Difference</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book your stay today and discover why guests return to us year after year.</p>
+            <a href="booking.html" class="inline-block bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400 mb-4">Where luxury meets comfort, creating unforgettable experiences for our valued guests.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-400 hover:text-white transition">Booking</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Luxury Rooms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Spa & Wellness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fine Dining</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Event Spaces</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Concierge</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-3 mt-1 text-gray-400"></i>
+                            <span class="text-gray-400">123 Luxury Avenue, Downtown, City 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">info@luxuryhaven.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400" data-aos="fade-up">
+                <p>&copy; 2023 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

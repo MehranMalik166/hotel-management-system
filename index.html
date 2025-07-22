@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven | Home</title>
+    <meta name="description" content="Experience luxury at its finest at Luxury Haven Hotel">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        accent: '#3b82f6',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-2xl font-bold text-primary">Luxury Haven</span>
+            </a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i data-feather="menu" class="text-gray-800 w-6 h-6"></i>
+            </button>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-primary font-medium hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-accent transition">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-accent transition">Services</a>
+                <a href="booking.html" class="text-gray-700 hover:text-accent transition">Booking</a>
+                <a href="contact.html" class="text-gray-700 hover:text-accent transition">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-primary font-medium">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-accent transition">About</a>
+            <a href="services.html" class="block py-2 text-gray-700 hover:text-accent transition">Services</a>
+            <a href="booking.html" class="block py-2 text-gray-700 hover:text-accent transition">Booking</a>
+            <a href="contact.html" class="block py-2 text-gray-700 hover:text-accent transition">Contact</a>
+        </div>
+    </header>
+
+   <!-- Hero Section - Upgraded -->
+<section class="relative min-h-[80vh] flex items-center"> <!-- Increased height -->
+  <!-- Background Image with Less Blur -->
+  <div class="absolute inset-0 -z-10">
+    <img 
+      src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+      alt="Luxury Hotel"
+      class="absolute inset-0 w-full h-full object-cover" <!-- Minimal blur, high visibility -->
+    >
+    <!-- Dark Overlay for Text Readability -->
+    <div class="absolute inset-0 bg-black/40"></div> <!-- Reduced opacity for clearer image -->
+  </div>
+  
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10 text-white" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+      Experience Luxury <br> 
+      <span class="text-accent">Like Never Before</span>
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl text-gray-200 drop-shadow-md">
+      Discover unparalleled comfort and world-class service at Luxury Haven.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="booking.html" 
+         class="bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all hover:scale-105">
+         Book Now
+      </a>
+      <a href="about.html" 
+         class="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-full transition-all hover:scale-105">
+         Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Luxury Haven</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We combine luxury with comfort to provide you with an unforgettable experience</p>
+            </div>
+            
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Feature 1 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+        <!-- Single Border on Hover -->
+        <div class="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-primary transition-all duration-300 pointer-events-none"></div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="award" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Luxury Accommodations</h3>
+        <p class="text-gray-600">Our rooms and suites are designed with your comfort in mind, featuring premium amenities and breathtaking views.</p>
+    </div>
+    
+    <!-- Feature 2 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="200">
+        <!-- Single Border on Hover -->
+        <div class="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-primary transition-all duration-300 pointer-events-none"></div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="heart" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Exceptional Service</h3>
+        <p class="text-gray-600">Our dedicated staff is committed to providing personalized service to meet your every need.</p>
+    </div>
+    
+    <!-- Feature 3 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="300">
+        <!-- Single Border on Hover -->
+        <div class="absolute inset-0 border-2 border-transparent rounded-xl group-hover:border-primary transition-all duration-300 pointer-events-none"></div>
+        
+        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="map-pin" class="text-primary w-8 h-8"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Prime Location</h3>
+        <p class="text-gray-600">Situated in the heart of the city, we offer easy access to major attractions and business districts.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+  <!-- Blurred Background Image -->
+  <div class="absolute inset-0 -z-10">
+    <img 
+      src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+      alt="Hotel Gallery Background"
+      class="w-full h-full object-cover blur-[2px] opacity-30" <!-- Subtle blur -->
+    >
+    <div class="absolute inset-0 bg-black/20"></div> <!-- Dark overlay -->
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold text-black mb-4 mt-10 drop-shadow-lg">Our Gallery</h2>
+      <p class="text-black-200 text-xl max-w-2xl mx-auto drop-shadow-md">
+        Take a glimpse of our luxurious facilities and accommodations
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Image 1: Deluxe Room -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+        <img 
+          src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Deluxe Room" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Deluxe Room</h3>
+        </div>
+      </div>
+
+      <!-- Image 2: Hotel Lobby -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+        <img 
+          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Hotel Lobby" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Grand Lobby</h3>
+        </div>
+      </div>
+
+      <!-- Image 3: Restaurant -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+        <img 
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Restaurant" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Fine Dining</h3>
+        </div>
+      </div>
+
+      <!-- Image 4: Executive Suite -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+        <img 
+          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Executive Suite" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Executive Suite</h3>
+        </div>
+      </div>
+
+      <!-- Image 5: Swimming Pool -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+        <img 
+          src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+          alt="Swimming Pool" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Infinity Pool</h3>
+        </div>
+      </div>
+
+      <!-- Image 6: Presidential Suite -->
+      <div class="card-box overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+        <img 
+          src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Presidential Suite" 
+          class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-xl font-bold">Presidential Suite</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-10" data-aos="fade-up">
+      <a href="services.html" class="inline-block bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white font-semibold py-3 px-8 mb-10 rounded-full shadow-lg transition-all hover:scale-105">
+        View All Services
+      </a>
+    </div>
+  </div>
+</section>
+    </section> 
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Guests Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied guests</p>
+            </div>
+            
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Testimonial 1 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg transition-all duration-300 group hover:scale-[1.03] overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <!-- Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="flex items-center mb-4">
+            <div class="flex">
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+            </div>
+        </div>
+        <p class="text-gray-600 mb-6">"The attention to detail at Luxury Haven is impeccable. From the moment we arrived, we felt like royalty. The staff went above and beyond to make our stay memorable."</p>
+        <div class="flex items-center">
+            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-semibold">JD</span>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-800">John Doe</h4>
+                <p class="text-gray-500 text-sm">Business Traveler</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonial 2 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg transition-all duration-300 group hover:scale-[1.03] overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <!-- Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="flex items-center mb-4">
+            <div class="flex">
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+            </div>
+        </div>
+        <p class="text-gray-600 mb-6">"Our family vacation was perfect thanks to Luxury Haven. The kids loved the pool, and we enjoyed the spa. The rooms were spacious and beautifully decorated."</p>
+        <div class="flex items-center">
+            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-semibold">AS</span>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-800">Anna Smith</h4>
+                <p class="text-gray-500 text-sm">Family Vacation</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonial 3 -->
+    <div class="relative bg-gray-50 p-8 rounded-xl shadow-lg transition-all duration-300 group hover:scale-[1.03] overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+        <!-- Animated Border -->
+        <div class="absolute inset-0 rounded-xl pointer-events-none overflow-hidden">
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-xl transition-all duration-300 opacity-0 group-hover:opacity-100"
+                 style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 0)">
+            </div>
+        </div>
+        
+        <div class="flex items-center mb-4">
+            <div class="flex">
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+            </div>
+        </div>
+        <p class="text-gray-600 mb-6">"As a frequent business traveler, I've stayed in many hotels, but Luxury Haven stands out. The executive lounge and business center are top-notch, making my work trips productive and comfortable."</p>
+        <div class="flex items-center">
+            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-semibold">RJ</span>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-800">Robert Johnson</h4>
+                <p class="text-gray-500 text-sm">Corporate Client</p>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for an Unforgettable Experience?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book your stay today and discover the perfect blend of luxury, comfort, and exceptional service.</p>
+            <a href="booking.html" class="inline-block bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400 mb-4">Where luxury meets comfort, creating unforgettable experiences for our valued guests.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-400 hover:text-white transition">Booking</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Luxury Rooms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Spa & Wellness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fine Dining</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Event Spaces</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Concierge</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-3 mt-1 text-gray-400"></i>
+                            <span class="text-gray-400">123 Luxury Avenue, Downtown, City 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">info@luxuryhaven.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400" data-aos="fade-up">
+                <p>&copy; 2023 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

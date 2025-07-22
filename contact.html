@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven | Contact Us</title>
+    <meta name="description" content="Get in touch with Luxury Haven Hotel">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        accent: '#3b82f6',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-2xl font-bold text-primary">Luxury Haven</span>
+            </a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i data-feather="menu" class="text-gray-800 w-6 h-6"></i>
+            </button>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-accent transition">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-accent transition">Services</a>
+                <a href="booking.html" class="text-gray-700 hover:text-accent transition">Booking</a>
+                <a href="contact.html" class="text-primary font-medium hover:text-accent transition">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-accent transition">About</a>
+            <a href="services.html" class="block py-2 text-gray-700 hover:text-accent transition">Services</a>
+            <a href="booking.html" class="block py-2 text-gray-700 hover:text-accent transition">Booking</a>
+            <a href="contact.html" class="block py-2 text-primary font-medium">Contact</a>
+        </div>
+    </header>
+<!-- Contact Hero Section -->
+<section class="relative py-24 min-h-[400px]">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 -z-10">
+    <img 
+     src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+      alt="Luxury Hotel Lobby"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    >
+    <div class="absolute inset-0 bg-black/40"></div> <!-- Dark overlay -->
+  </div>
+  
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center">
+    <div class="text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Contact Us</h1>
+      <p class="text-gray-200 text-xl md:text-2xl max-w-2xl mx-auto drop-shadow-md">
+        We'd love to hear from you
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation Question</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="event">Event Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-6">
+                                <i data-feather="map-pin" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-800">Address</h3>
+                                <p class="text-gray-600">123 Luxury Avenue, Downtown<br>City 10001, Country</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-6">
+                                <i data-feather="phone" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-800">Phone</h3>
+                                <p class="text-gray-600">+1 (555) 123-4567<br>+1 (555) 765-4321</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-6">
+                                <i data-feather="mail" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-800">Email</h3>
+                                <p class="text-gray-600">info@luxuryhaven.com<br>reservations@luxuryhaven.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-6">
+                                <i data-feather="clock" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-800">Opening Hours</h3>
+                                <p class="text-gray-600">Front Desk: 24/7<br>Restaurant: 6:00 AM - 11:00 PM<br>Spa: 8:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="#" class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-0 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132335!2d-73.9888756845938!3d40.74844047932799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1623861234567!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about Luxury Haven</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800 text-left">What time is check-in and check-out?</h3>
+                        <i data-feather="chevron-down" class="text-primary w-6 h-6 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Check-in time is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out may be available upon request, subject to availability and additional charges.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800 text-left">Do you offer airport transportation?</h3>
+                        <i data-feather="chevron-down" class="text-primary w-6 h-6 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Yes, we offer airport transportation services for an additional fee. Please contact our concierge team in advance to arrange your airport transfer.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800 text-left">Is parking available at the hotel?</h3>
+                        <i data-feather="chevron-down" class="text-primary w-6 h-6 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Yes, we offer both valet parking and self-parking options. Parking fees apply. Please contact us for current parking rates and availability.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800 text-left">Do you have pet-friendly rooms?</h3>
+                        <i data-feather="chevron-down" class="text-primary w-6 h-6 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Yes, we are a pet-friendly hotel. A pet fee applies, and certain restrictions may apply based on pet size and breed. Please inform us in advance if you'll be bringing a pet.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800 text-left">What is your cancellation policy?</h3>
+                        <i data-feather="chevron-down" class="text-primary w-6 h-6 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Our standard cancellation policy allows free cancellation up to 48 hours before your scheduled arrival date. Cancellations made within 48 hours may be subject to a fee equivalent to one night's stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Have More Questions?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our team is available 24/7 to assist you with any inquiries.</p>
+            <a href="contact.html" class="inline-block bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400 mb-4">Where luxury meets comfort, creating unforgettable experiences for our valued guests.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-400 hover:text-white transition">Booking</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Luxury Rooms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Spa & Wellness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fine Dining</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Event Spaces</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Concierge</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-3 mt-1 text-gray-400"></i>
+                            <span class="text-gray-400">123 Luxury Avenue, Downtown, City 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">info@luxuryhaven.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400" data-aos="fade-up">
+                <p>&copy; 2023 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
